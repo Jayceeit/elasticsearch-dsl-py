@@ -527,7 +527,8 @@ class SearchBase(Request):
         """
         s = self._clone()
         s._knn.append(
-            {{
+            {
+            "knn": {
                 "field": field,
                 "k": k,
                 "num_candidates": num_candidates,
