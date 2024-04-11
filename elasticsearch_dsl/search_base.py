@@ -518,7 +518,8 @@ class SearchBase(Request):
         :arg boost: A floating-point boost factor for kNN scores
         :arg filter: query to filter the documents that can match
         :arg similarity: the minimum similarity required for a document to be considered a match, as a float value
-
+        :arg size: The pagination size of the query you are attempting.
+        :arg from_num: The equivalent of the from in Elasticsearch. What offset are you looking for?
         Example::
 
             s = Search()
